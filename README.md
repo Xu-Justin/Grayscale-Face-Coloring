@@ -1,7 +1,7 @@
 # Grayscale-Face-Coloring
 Given a grayscale facial image as the input, then the deep learning model will try to generate a colored version of the image as the output.
 
-Read full reports about this project on this [PDF](https://drive.google.com/uc?export=download&id=1T2DBn8IIyOW_ubgOtJ6KG4emHlDgPwtN).
+Read full report about this project on this [PDF](https://drive.google.com/uc?export=download&id=1T2DBn8IIyOW_ubgOtJ6KG4emHlDgPwtN).
 
 ---
 
