@@ -1,0 +1,8 @@
+Dataset/*
+!Dataset/import_dataset.py
+Resources/model_saved/*
+!Resources/model_saved/import_trained_model.py
+Script/.ipynb_checkpoints
+Script/__pycache__
+Resources/progress_image/*
+!Resources/progress_image/sample

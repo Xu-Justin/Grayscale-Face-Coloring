@@ -1,0 +1,49 @@
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_5 (InputLayer)           [(None, 256, 256, 1  0           []                               
+                                )]                                                                
+                                                                                                  
+ input_4 (InputLayer)           [(None, 256, 256, 3  0           []                               
+                                )]                                                                
+                                                                                                  
+ concatenate_7 (Concatenate)    (None, 256, 256, 4)  0           ['input_5[0][0]',                
+                                                                  'input_4[0][0]']                
+                                                                                                  
+ conv2d_8 (Conv2D)              (None, 128, 128, 64  4160        ['concatenate_7[1][0]']          
+                                )                                                                 
+                                                                                                  
+ leaky_re_lu_8 (LeakyReLU)      (None, 128, 128, 64  0           ['conv2d_8[1][0]']               
+                                )                                                                 
+                                                                                                  
+ conv2d_9 (Conv2D)              (None, 64, 64, 128)  131200      ['leaky_re_lu_8[1][0]']          
+                                                                                                  
+ batch_normalization_14 (BatchN  (None, 64, 64, 128)  512        ['conv2d_9[1][0]']               
+ ormalization)                                                                                    
+                                                                                                  
+ leaky_re_lu_9 (LeakyReLU)      (None, 64, 64, 128)  0           ['batch_normalization_14[1][0]'] 
+                                                                                                  
+ conv2d_10 (Conv2D)             (None, 32, 32, 256)  524544      ['leaky_re_lu_9[1][0]']          
+                                                                                                  
+ batch_normalization_15 (BatchN  (None, 32, 32, 256)  1024       ['conv2d_10[1][0]']              
+ ormalization)                                                                                    
+                                                                                                  
+ leaky_re_lu_10 (LeakyReLU)     (None, 32, 32, 256)  0           ['batch_normalization_15[1][0]'] 
+                                                                                                  
+ conv2d_11 (Conv2D)             (None, 16, 16, 512)  2097664     ['leaky_re_lu_10[1][0]']         
+                                                                                                  
+ batch_normalization_16 (BatchN  (None, 16, 16, 512)  2048       ['conv2d_11[1][0]']              
+ ormalization)                                                                                    
+                                                                                                  
+ leaky_re_lu_11 (LeakyReLU)     (None, 16, 16, 512)  0           ['batch_normalization_16[1][0]'] 
+                                                                                                  
+ conv2d_12 (Conv2D)             (None, 16, 16, 1)    8193        ['leaky_re_lu_11[1][0]']         
+                                                                                                  
+ activation_1 (Activation)      (None, 16, 16, 1)    0           ['conv2d_12[1][0]']              
+                                                                                                  
+==================================================================================================
+Total params: 2,769,345
+Trainable params: 2,767,553
+Non-trainable params: 1,792
+__________________________________________________________________________________________________
