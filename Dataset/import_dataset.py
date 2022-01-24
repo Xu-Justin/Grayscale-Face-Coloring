@@ -1,3 +1,7 @@
+# If this code failed to download the dataset,
+# refer to the following link to manually download the dataset.
+# https://www.kaggle.com/almightyj/person-face-dataset-thispersondoesnotexist
+
 import kaggle, os, shutil
 import cv2
 import numpy as np
@@ -26,8 +30,8 @@ def remove(path):
         shutil.rmtree(path)
         
 if __name__ == '__main__':
-    # remove('raw/')
-    # download_kaggle_dataset('almightyj/person-face-dataset-thispersondoesnotexist', 'raw/')
+    remove('raw/')
+    download_kaggle_dataset('almightyj/person-face-dataset-thispersondoesnotexist', 'raw/')
     
     source = 'raw/thispersondoesnotexist.10k/'
     file_names = os.listdir(source)

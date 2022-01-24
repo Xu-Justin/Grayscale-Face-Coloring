@@ -1,3 +1,7 @@
+# If this code failed to download the model,
+# refer to the following link to manually download the model.
+# https://drive.google.com/drive/folders/1PEytwY6AxPYfTmaXY2bwwCap-8KEiUe6?usp=sharing
+
 import os, shutil
 from google_drive_downloader import GoogleDriveDownloader as gdd
 
