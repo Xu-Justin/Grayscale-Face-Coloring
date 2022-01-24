@@ -8,6 +8,7 @@ patch_shape = (16, 16) # Height, Width
 # Dataset
 dir_train = root + 'Dataset/train/'
 dir_test = root + 'Dataset/test/'
+dir_test_result = root + 'Dataset/test-result/'
 
 # Resources
 dir_model_saved = root + 'Resources/model_saved/'
